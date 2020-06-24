@@ -1,0 +1,18 @@
+#项目应用的技术
+ Python, selenium, POM, unittest, Html report ,ddt(数据驱动)
+#项目结构
+ Driver
+   |
+ pageObject
+   |
+ TestCases
+   |
+ Reports
+
+#程序测试套件 testSuit\All_TestSuits.py
+#下面这个系统文件做了修改， 从A改成了B
+   C:\ExerciseWS\Unittest\venv\Lib\site-packages\HtmlTestRunner\result.py
+A: with open(path_file, 'w') as report_file:
+B: with open(path_file, 'w',encoding='utf-8') as report_file:
+
+# C:\ExerciseWS\Unittest\venv\Lib 文件夹中增加了2个生成general report的文件: HTMLTestRunnerEN.py/HTMLTestRunnerCN.py
