@@ -11,7 +11,7 @@ def report(testSuite):
     reportName = r' UITestReport' + timeStamp + '.html'
     file_path = os.path.join(path, reportName)
     fp = open(file_path, 'wb')
-    runner = HTMLTestRunnerEN.HTMLTestReportEN(
+    runner = HTMLTestRunnerEN.HTMLTestReportENG(
         stream=fp,
         title='UIAutomationTestReport' + timeStamp,
         description='TestReport',
