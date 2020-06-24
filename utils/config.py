@@ -12,7 +12,7 @@ def abPath():
 
 config = {
     "projectPath": {
-        "webDriver": r"C:\Users\yue.qi\AppData\Local\Programs\Python\chromedriver.exe",
+        "webDriver": r"C:\Users\yue.qi\AppData\Local\Programs\Python\Python37\chromedriver.exe",
         "excelDir": abPath() + r"\data",
         "reportPath": abPath() + r'\reports',
         ###################functional test case########################
