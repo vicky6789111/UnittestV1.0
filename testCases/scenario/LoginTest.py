@@ -6,6 +6,8 @@ from pageObject.LoginPage import LoginPage
 
 from csv import excel
 import ddt as ddt
+
+from utils.config import config
 from utils.excel_testdata_reader import ReadExcel
 
 excel = ReadExcel('loginTestData.xlsx', 0)
@@ -23,8 +25,8 @@ class LoginTest(unittest.TestCase):
     def setUp(self):  # 执行每条用例前都会执行
         print('每条用例执行前的前置条件')
         logging.info("Open chorme ***********")
-        self.baseURl = "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F"
-        self.driver = webdriver.Chrome(executable_path="../drivers/chromedriver.exe")
+        self.baseURl = config["productPath"]["loginPage"]
+        self.driver = webdriver.Chrome(executable_path=config["projectPath"]["webDriver"])
         self.driver.get(self.baseURl)
         self.driver.maximize_window()
 
