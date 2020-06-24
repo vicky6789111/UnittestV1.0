@@ -1,6 +1,4 @@
-import os, sys
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+import os
 
 # 获取根目录绝对路径
 
@@ -11,11 +9,10 @@ def abPath():
     return ABSPATH
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
 
 config = {
     "projectPath": {
-        "webDriver": driver,
+        "webDriver": r"C:\Users\yue.qi\AppData\Local\Programs\Python\chromedriver.exe",
         "excelDir": abPath() + r"\data",
         "reportPath": abPath() + r'\reports',
         ###################functional test case########################
