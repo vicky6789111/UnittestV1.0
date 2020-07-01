@@ -25,7 +25,7 @@ pipeline{
 			    stage('auto test1'){
 				    steps {
 					echo "Running the auto test"
-					 bat 'cd C:\Users\yue.qi\.jenkins\workspace\PiplineTest python all_test_suite.py'
+					 bat 'cd C:/Users/yue.qi/.jenkins/workspace/PiplineTest python all_test_suite.py'
  
 					}
 				}
