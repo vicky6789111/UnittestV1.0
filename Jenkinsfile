@@ -27,12 +27,6 @@ pipeline{
 					}
 				}
 				stage("auto test2"){
-				agent{
-				   docker{
-				      reuseNod false
-					  image 'ubuntu'
-				   }
-				}
 				steps{
 				   echo 'running auto test2'
 				 }
