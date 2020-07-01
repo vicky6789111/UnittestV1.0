@@ -25,7 +25,7 @@ pipeline{
 			    stage('auto test1'){
 				    steps {
 					echo "Running the auto test"
-					 sh 'python all_test_suite.py'
+					 bat 'startTest'
  
 					}
 				}
