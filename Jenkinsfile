@@ -28,7 +28,7 @@ pipeline{
 		    parallel {
 			    stage('auto test1'){
 				    steps {
-					echo "Running the auto test"
+					echo "Running the auto test1"
 					 bat 'cd C:/Users/yue.qi/.jenkins/workspace/PiplineTest'
 					 bat 'python all_test_suite.py'
  
@@ -36,7 +36,9 @@ pipeline{
 				}
 				stage("auto test2"){
 				steps{
-				   echo 'running auto test2'
+				         echo "Running the auto test2"
+					 bat 'cd C:/Users/yue.qi/.jenkins/workspace/PiplineTest'
+					 bat 'python all_test_suite.py'
 				 }
 				}
 			    }
