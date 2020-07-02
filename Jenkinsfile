@@ -2,7 +2,7 @@ pipeline{
   agent any
   environment {
     PATH = "C:\\WINDOWS\\SYSTEM32"
-    pythonPATH="C:\Users\yue.qi\AppData\Local\Programs\Python\Python37"
+    pythonPATH="C:\\Users\\yue.qi\\AppData\\Local\\Programs\\Python\\Python37"
 	  
     }
     stages{
